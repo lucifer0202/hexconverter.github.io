@@ -11,10 +11,10 @@ function TcsgParameter({ title }: { title: string }) {
     if (!hexString) return alert("Please enter a hex string!");
 
     const parameters = [
-      { name: "No Parameter", length: 2 * 4, type: "int" },
-      { name: "No Parameter", length: 2 * 4, type: "int" },
-      { name: "No Parameter", length: 2 * 4, type: "int" },
-      { name: "No Parameter", length: 2 * 4, type: "int" },
+      { name: "Sequence Number", length: 2 * 4, type: "int" },
+      { name: "Command", length: 2 * 4, type: "int" },
+      { name: "Command Type", length: 2 * 4, type: "int" },
+      { name: "Data Length", length: 2 * 4, type: "int" },
       { name: "Reference Clock Source [FIXED]", length: 2, type: "int" },
       { name: "Radar Operation Mode [PRO]", length: 2, type: "int" },
       { name: "Simulation Signal ON / OFF [PRO]", length: 2, type: "int" },
